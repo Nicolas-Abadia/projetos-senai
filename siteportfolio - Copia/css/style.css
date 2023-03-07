@@ -1,0 +1,227 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --cor0: #FDFDFD;
+    --cor1: #2C2C2C;
+    --cor2: #454545;
+    --fonte-padrao: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    font-family: var(--fonte-padrao);
+}
+
+body {
+    font-family: var(--fonte-padrao);
+    background-color: var(--cor0);
+    color: var(--cor1);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 185px;
+
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.5);
+    ;
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    min-height: 163px;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 1; /* This property define the hierarchy of the element */
+    backdrop-filter: blur(10px);
+}
+
+h2 {
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+}
+
+p {
+    line-height: 27px;
+    letter-spacing: 0.07em;
+    font-size: 18px;
+}
+
+.logotipo {
+    display: block;
+    height: 100%;
+    width: 80px;
+
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor1);
+}
+
+a:hover {
+    opacity: 80%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    font-size: 20px;
+    max-width: 167.8px;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    color: var(--cor1);
+    text-transform: uppercase;
+    display: flex;
+    
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+}
+
+main {
+    margin-top: 256px;
+    display: flex;
+    flex-direction: column;
+    gap: 149px;
+}
+
+.banner {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 112px;
+}
+
+.banner h2 {
+    max-width: 835px;
+    text-align: center;
+}
+
+.banner img {
+    width: 40%;
+}
+
+.about {
+    display: flex;
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 112px;
+}
+
+img {
+    transition: 0.5s;
+    
+}
+
+img:hover {
+    scale: 102%;
+}
+
+.desc {
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 15%;
+    justify-content: center;
+    gap: 27px;
+    height: 100%;
+}
+
+.desc p {
+    text-align: justify;
+}
+
+footer {
+    border-top: 1px solid var(--cor2);
+    display: flex;
+    flex-direction: column;
+    gap: 75px;
+    padding: 75px;
+    font-size: 25px;
+    color: var(--cor2);
+}
+
+footer a {
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--cor2);
+}
+
+footer span {
+
+    font-weight: 300;
+    letter-spacing: 15%;
+}
+
+.projects {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
+   
+}
+
+.div_projects {
+    max-width:  1243px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 75px;
+}
+
+.project_desc {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    gap: 27px;
+}
+
+.project_desc h3 {
+    text-transform: uppercase;
+}
+
+
+.project_desc p {
+    text-align: justify;
+    letter-spacing: 0.07em;
+    font-size: 20px;
+    line-height: 30px;
+}
