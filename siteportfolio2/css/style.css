@@ -164,7 +164,6 @@ img:hover {
     letter-spacing: 15%;
     justify-content: center;
     gap: 27px;
-    padding: 0px 50px;
 
 }
 
@@ -193,7 +192,7 @@ footer a {
 }
 
 footer span {
-
+    text-align: center;
     font-weight: 300;
     letter-spacing: 15%;
 }
@@ -254,7 +253,7 @@ menu {
     width: 100%;
     display: none;
     padding: 20px;
-    margin-top: 100px;
+    margin-top: 110px;
     position: fixed;
     flex-wrap: wrap;
     flex-direction: column;
@@ -281,6 +280,22 @@ menu a:hover {
 
 
 @media (max-width: 972px) {
+
+    h2, h3 {
+        font-size: 36px;
+    }
+
+    body {
+        gap: 100px;
+    }
+
+    .about {
+        padding: 0px 25px;
+        gap: 95px;
+    }
+
+    
+
     nav {
         display: none;
     }
@@ -295,5 +310,10 @@ menu a:hover {
 
     .banner img {
     width: 75%;
+    }
+
+    .email {
+        line-break: anywhere;
+        text-align: center;
     }
 }
