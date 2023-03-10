@@ -86,7 +86,7 @@ a:hover {
 nav {
     display: flex;
     align-items: center;
-
+    transition: 0.5s;
 }
 
 nav a {
@@ -100,6 +100,12 @@ nav a {
     display: flex;
 
 }
+
+nav .nav-toggler {
+    display: none;
+}
+
+
 
 footer {
     display: flex;
@@ -249,21 +255,7 @@ footer span {
     cursor: pointer;
 }
 
-menu {
-    width: 100%;
-    display: none;
-    padding: 20px;
-    margin-top: 110px;
-    position: fixed;
-    flex-wrap: wrap;
-    flex-direction: column;
-    z-index: 1;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(255, 255, 255, 0.5);
-    ;
-    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.05);
-    backdrop-filter: blur(10px);
+
 }
 
 menu a {
@@ -281,8 +273,13 @@ menu a:hover {
 
 @media (max-width: 972px) {
 
-    h2, h3 {
+    h2,
+    h3 {
         font-size: 36px;
+    }
+
+    p {
+        text-align: left;
     }
 
     body {
@@ -294,12 +291,26 @@ menu a:hover {
         gap: 95px;
     }
 
-    
-
-    nav {
-        display: none;
+    header {
+        background-color: white;
     }
 
+    nav {
+        display: grid;
+        position: fixed;
+        width: 100%;
+        top: 110px;
+        left: 0;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.5);
+        box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.05);
+        backdrop-filter: blur(10px);
+        z-index: -1;
+        transform: translateY(-100%);
+        transition: 0.5s;
+    }
+
+ 
     #burguer {
         display: block;
     }
@@ -309,7 +320,7 @@ menu a:hover {
     }
 
     .banner img {
-    width: 75%;
+        width: 75%;
     }
 
     .email {
