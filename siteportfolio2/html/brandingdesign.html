@@ -16,25 +16,33 @@
 <body>
     <header>
         <div class="logotipo"> <img class="logotipo" src="../imagens/Ativo 3.svg" alt=""></div>
-        <nav>
-            <a id="a_home" href="../html/index.html">Home</a>
-            <a id="a_webdesign" href="../html/webdesign.html">Web Design</a>
-            <a id="a_branding" href="../html/brandingdesign.html"><b>Branding Design</b></a>
-            <a id="a_packing" href="../html/packingdesign.html">Packing Design</a>
-            <a id="a_editorial" href="../html/editorial.html">Editorial</a>
-        </nav>
-        <span id="burguer" class="material-symbols-rounded" onclick="clickMenu()">
-            menu
-        </span>
         
+        <nav>
+            
+            <ul class="nav-web">
+                <li><a class="nav-link" id="a_home" href="../html/index.html">Home</a></li>
+                <li><a class="nav-link" id="a_webdesign" href="../html/webdesign.html">Web Design</a></li>
+                <li><a class="nav-link" id="a_branding" href="../html/brandingdesign.html"><b>Branding Design</b></a></li>
+                <li><a class="nav-link" id="a_packing" href="../html/packingdesign.html">Packing Design</a></li>
+                <li><a class="nav-link" id="a_editorial" href="../html/editorial.html">Editorial</a></li>
+            </ul>
+        </nav>
+        <label class="navbar-toggler" for="toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
     </header>
-    <menu id="menu">
-        <a id="a_home" href="../html/index.html">Home</a>
-        <a id="a_webdesign" href="../html/webdesign.html">Web Design</a>
-        <a id="a_branding" href="../html/brandingdesign.html"><b>Branding Design</b></a>
-        <a id="a_packing" href="../html/packingdesign.html">Packing Design</a>
-        <a id="a_editorial" href="../html/editorial.html">Editorial</a>
-    </menu>
+    <input type="checkbox" id="toggle">
+    <nav class="p-nav-mobile">
+        <ul class="nav-mobile">
+            <li class="nav-item"><a class="nav-link" id="a_home" href="../html/index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" id="a_webdesign" href="../html/webdesign.html">Web Design</a></li>
+            <li class="nav-item"><a class="nav-link" id="a_branding" href="../html/brandingdesign.html"><b>Branding Design</b></a></li>
+            <li class="nav-item"><a class="nav-link" id="a_packing" href="../html/packingdesign.html">Packing Design</a></li>
+            <li class="nav-item"><a class="nav-link" id="a_editorial" href="../html/editorial.html">Editorial</a></li>
+        </ul>
+    </nav>
     <main>
         <section class="banner">
             <img src="../imagens/nickgif.gif" alt="">
