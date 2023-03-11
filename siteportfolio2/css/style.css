@@ -401,6 +401,14 @@ footer span {
     input:checked ~ header {
         background-color: rgb(255, 255, 255);;
     }
+    .div_projects {
+        max-width: 100%;
+    }
     
+}
 
+@media (max-width: 400px) {
+    .st {
+        display: none;
+    }
 }
