@@ -158,6 +158,10 @@ input:checked~header .navbar-toggler .bar:nth-child(3) {
     width: 100%;
 }
 
+.img-project {
+    border-radius: 16px;
+}
+
 .project-imgs {
     border-radius: 16px;
     display: flex;
